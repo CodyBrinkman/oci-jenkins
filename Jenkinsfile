@@ -13,6 +13,24 @@ pipeline {
 			}
 
 		}
+
+		stage('Testing OCI connection') {
+
+			steps {
+
+
+				echo 'Testing connection to OCI'
+				script {
+
+
+						sh "whoami"
+						sh "oci"
+
+					}	
+
+			}				
+
+		}
 	
 	}
 
